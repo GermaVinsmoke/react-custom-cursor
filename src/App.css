@@ -26,17 +26,3 @@
   height: 40px;
   background-color: rgba(229, 128, 128, 0.5);
 }
-
-.links-container {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 50px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #dc5656;
-  margin: 20px;
-}
