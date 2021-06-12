@@ -131,21 +131,21 @@ const Cursor = () => {
     dotOutline.current.style.top = _y.current + 'px';
     dotOutline.current.style.left = _x.current + 'px';
 
-    if (
-      Math.floor(_x.current) !== Math.floor(endX.current) &&
-      Math.ceil(_x.current) !== Math.ceil(endX.current)
-    )
-      requestRef.current = requestAnimationFrame(animateDotOutline);
-    else if (
-      Math.floor(_x.current) === Math.floor(endX.current) ||
-      Math.ceil(_x.current) === Math.ceil(_x.current)
-    ) {
-      // console.table(coordinates);
-      // console.log(x);
-      // console.log(y);
-      // console.log(timestamps);
-      // cancelAnimationFrame(requestRef.current);
-    }
+    // if (
+    //   Math.floor(_x.current) !== Math.floor(endX.current) &&
+    //   Math.ceil(_x.current) !== Math.ceil(endX.current)
+    // )
+    requestRef.current = requestAnimationFrame(animateDotOutline);
+    // else if (
+    //   Math.floor(_x.current) === Math.floor(endX.current) ||
+    //   Math.ceil(_x.current) === Math.ceil(_x.current)
+    // ) {
+    // console.table(coordinates);
+    // console.log(x);
+    // console.log(y);
+    // console.log(timestamps);
+    // cancelAnimationFrame(requestRef.current);
+    // }
   };
 
   return (
@@ -153,7 +153,7 @@ const Cursor = () => {
       <div ref={dotOutline} className="cursor-dot-outline"></div>
       <div ref={dot} className="cursor-dot"></div>
 
-      <div ref={list} className="links-container">
+      {/* <div ref={list} className="links-container">
         {[...Array(4).keys()].map(i => (
           <Link
             key={i}
@@ -162,7 +162,7 @@ const Cursor = () => {
             mouseOutEvent={mouseOutEvent}
           />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
