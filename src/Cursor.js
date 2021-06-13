@@ -107,15 +107,14 @@ const Cursor = () => {
       <div ref={dot} className="cursor-dot"></div>
 
       <div ref={list} className="links-container">
-        {/* {[...Array(4).keys()].map(i => (
+        {[...Array(4).keys()].map(i => (
           <Link
             key={i}
             src={getImage(i + 1)}
-            onMouseOver={mouseOverEvent}
-            onMouseOut={mouseOutEvent}
+            mouseOverEvent={mouseOverEvent}
+            mouseOutEvent={mouseOutEvent}
           />
-        ))} */}
-        <Link onMouseOver={mouseOverEvent} onMouseOut={mouseOutEvent} />
+        ))}
       </div>
     </>
   );
