@@ -1,7 +1,9 @@
-import Cursor from './Cursor';
-
 function App() {
-  return <Cursor />;
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  );
 }
 
 export default App;
